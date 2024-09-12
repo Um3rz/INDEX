@@ -41,6 +41,11 @@ export default function Footer() {
               <span className="sr-only">Email</span>
             </Link>
           </div>
+
+          {/* Copyright */}
+          <p className="text-white text-center mt-8 text-sm">
+            &copy; {new Date().getFullYear()} Index. All rights reserved.
+          </p>
         </div>
       </div>
     </footer>

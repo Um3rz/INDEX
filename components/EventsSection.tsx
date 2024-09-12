@@ -24,7 +24,7 @@ export default function Component() {
 
 function EventCard({ logo, title, description }:any) {
   return (
-    <div className="bg-white relative overflow-hidden">
+    <div className="bg-gray-200 relative overflow-hidden rounded-md">
       <div className="absolute top-0 right-0 w-16 h-16 bg-gray-200 transform rotate-45 translate-x-8 -translate-y-8"></div>
       <div className="p-6 pb-12">
         <Image
