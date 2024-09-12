@@ -1,6 +1,5 @@
 'use client'
 import Image from "next/image";
-import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import HeroImg from "@/components/HeroImg";
 import Brands from "@/components/Brands";
