@@ -19,12 +19,18 @@ export default function Brands() {
           </p>
         </div>
         <div className="mx-auto grid max-w-5xl grid-cols-2 gap-8 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 items-center justify-center mt-8 md:mt-12 lg:mt-16">
-          {[...Array(10)].map((_, i) => (
+          {[
+            '/google.png',
+            '/meta.png',
+            '/notion.png',
+            '/systems.png',
+            '/s&p.png',
+          ].map((src, i) => (
             <div key={i} className="bg-white bg-opacity-5 backdrop-filter backdrop-blur-sm rounded-lg p-4 flex items-center justify-center transition-all duration-300 hover:bg-opacity-10 hover:scale-105 border border-gray-700">
               <Image
-                src={`/placeholder.svg?height=80&width=180`}
+                src={src}
                 alt={`Brand logo ${i + 1}`}
-                width={180}
+                width={280}
                 height={80}
                 className="max-w-full h-auto object-contain filter invert"
               />

@@ -3,8 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import HeroImg from "@/components/HeroImg";
-import Carousel from "@/components/Carousel";
 import Brands from "@/components/Brands";
+import Footer from "@/components/Footer";
+import EventsSection from "@/components/EventsSection";
 export default function Home() {
   return <div className="bg-[#091711]">
     <Navbar/>
@@ -34,7 +35,9 @@ export default function Home() {
         </div>              
     </div>
 </section>
+<EventsSection/>
 <Brands/>
+<Footer/>
   </div>
   
   
