@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { Instagram, Facebook, Linkedin, Mail } from 'lucide-react'
-
+import {  Linkedin, Mail } from 'lucide-react'
 export default function Footer() {
   return (
     <footer className="bg-[#226A4E44] py-8">
@@ -25,14 +24,14 @@ export default function Footer() {
 
           {/* Social Icons */}
           <div className="flex space-x-4">
-            <Link href="https://instagram.com" className="text-white hover:text-gray-200">
+            {/* <Link href="https://instagram.com" className="text-white hover:text-gray-200">
               <Instagram className="h-6 w-6" />
               <span className="sr-only">Instagram</span>
             </Link>
             <Link href="https://facebook.com" className="text-white hover:text-gray-200">
               <Facebook className="h-6 w-6" />
               <span className="sr-only">Facebook</span>
-            </Link>
+            </Link> */}
             <Link href="https://linkedin.com" className="text-white hover:text-gray-200">
               <Linkedin className="h-6 w-6" />
               <span className="sr-only">LinkedIn</span>

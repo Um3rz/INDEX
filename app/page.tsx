@@ -6,6 +6,7 @@ import HeroImg from "@/components/HeroImg";
 import Brands from "@/components/Brands";
 import Footer from "@/components/Footer";
 import EventsSection from "@/components/EventsSection";
+
 export default function Home() {
   return <div className="bg-[#091711]">
     <Navbar/>
