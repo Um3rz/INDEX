@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@fortawesome/react-fontawesome": "^0.2.2",
     "@splinetool/react-spline": "^4.0.0",
     "@storyblok/react": "^3.0.14",
     "lucide-react": "^0.441.0",
