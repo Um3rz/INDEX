@@ -15,7 +15,7 @@ export default function Brands() {
             Trusted by Industry Leaders
           </h2>
           <p className="max-w-[900px] text-gray-300 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-            We've had the privilege of working with some of the most innovative companies across various industries.
+            We have had the privilege of working with some of the most innovative companies across various industries.
           </p>
         </div>
         <div className="mx-auto grid max-w-5xl grid-cols-2 gap-8 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 items-center justify-center mt-8 md:mt-12 lg:mt-16">
