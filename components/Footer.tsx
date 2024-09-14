@@ -29,19 +29,19 @@ export default function Footer() {
 
           {/* Social Icons */}
           <div className="flex space-x-4">
-            <Link href="https://instagram.com" className="text-white hover:text-gray-200">
+            <Link href="https://www.instagram.com/index.lums/" className="text-white hover:text-gray-200">
             <FontAwesomeIcon icon={faInstagram} className='h-6 w-6' />
               <span className="sr-only">Instagram</span>
             </Link>
-            <Link href="https://facebook.com" className="text-white hover:text-gray-200">
+            <Link href="https://www.facebook.com/indexlums/" className="text-white hover:text-gray-200">
             <FontAwesomeIcon icon={faFacebook} className='h-6 w-6' />
               <span className="sr-only">Facebook</span>
             </Link>
-            <Link href="https://linkedin.com" className="text-white hover:text-gray-200">
+            <Link href="https://www.linkedin.com/company/index-the-design-and-innovation-society" className="text-white hover:text-gray-200">
             <FontAwesomeIcon icon={faLinkedin} className='h-6 w-6' />
               <span className="sr-only">LinkedIn</span>
             </Link>
-            <Link href="mailto:info@example.com" className="text-white hover:text-gray-200">
+            <Link href="mailto:index@lums.edu.pk" className="text-white hover:text-gray-200">
             <FontAwesomeIcon icon={faEnvelope} className='h-6 w-6' />
               <span className="sr-only">Email</span>
             </Link>
