@@ -26,13 +26,13 @@ export default function Brands() {
             '/systems.png',
             '/s&p.png',
           ].map((src, i) => (
-            <div key={i} className="bg-white bg-opacity-5 backdrop-filter backdrop-blur-sm rounded-lg p-4 flex items-center justify-center transition-all duration-300 hover:bg-opacity-10 hover:scale-105 border border-gray-700">
+            <div key={i} className="bg-white bg-opacity-5 backdrop-filter backdrop-blur-sm rounded-lg p-1 flex items-center justify-center transition-all duration-300 hover:bg-opacity-10 hover:scale-105 border border-gray-700">
               <Image
                 src={src}
                 alt={`Brand logo ${i + 1}`}
-                width={280}
+                width={400}
                 height={80}
-                className="max-w-full h-auto object-contain filter invert"
+                className="max-w-full h-auto object-contain align-middle filter invert"
               />
             </div>
           ))}

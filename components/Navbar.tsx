@@ -52,13 +52,13 @@ export default function Navbar() {
       {isOpen && (
         <div className="md:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            <Link href="#" className="text-gray-600 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">Home</Link>
-            <Link href="#" className="text-gray-600 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">About</Link>
-            <Link href="#" className="text-gray-600 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">Contact</Link>
+            <Link href="#" className="text-white hover:text-gray-600 block px-3 py-2 rounded-md text-base font-medium text-center">Home</Link>
+            <Link href="#" className="text-white hover:text-gray-600 block px-3 py-2 rounded-md text-base font-medium text-center">Events</Link>
+            <Link href="#" className="text-white hover:text-gray-600 block px-3 py-2 rounded-md text-base font-medium text-center">Our team</Link>
           </div>
-          <div className="pt-4 pb-3 border-t border-gray-200">
-            <button className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium w-full">
-              Sign Up
+          <div className="pt-4 pb-3 border-t border-[#5FD6A9]">
+            <button className="bg-black hover:bg-gray-950 text-white px-10 py-3 rounded-lg text-sm font-medium mx-auto block ">
+              Contact Us
             </button>
           </div>
         </div>
