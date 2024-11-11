@@ -16,8 +16,7 @@ export default function EventPage()
     )
 }
 
-
-export  function ImageGridSection() {
+function ImageGridSection() {
 return (
     <section className="container mx-auto px-4 py-16">
     <h2 className="text-center text-3xl font-bold mb-12 pt-20">Our Events</h2>
