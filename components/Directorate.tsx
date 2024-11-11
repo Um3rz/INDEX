@@ -2,7 +2,6 @@ import Image from 'next/image'
 
 export default function Directorate() {
   // Generate an array of 20 image placeholders
-  let i=0;
   const images = Array.from({ length: 20 }, (_, i) => `/directorate/${i + 1}.png`)
 
   return (
