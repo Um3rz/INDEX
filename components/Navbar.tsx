@@ -1,4 +1,73 @@
 
+// import { useState } from 'react'
+// import Image from 'next/image'
+// import Link from 'next/link'
+// import { Menu, X } from 'lucide-react'
+
+// export default function Navbar() {
+//   const [isOpen, setIsOpen] = useState(false)
+
+//   const toggleMenu = () => {
+//     setIsOpen(!isOpen)
+//   }
+
+//   return (
+//     <nav className="bg-[#091711]">
+//       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+//         <div className="flex items-center justify-between h-16">
+//           <div className="flex items-center">
+//             <div className="flex-shrink-0">
+//               <Image src="/Index_Logo_White.png" alt="Logo" width={100} height={10} />
+//             </div>
+//           </div>
+//           <div className="hidden md:block">
+//             <div className="ml-10 flex items-baseline space-x-4">
+//               <Link href="/" className="text-white hover:text-gray-600 px-3 py-2 rounded-md text-sm font-medium font-body">Home</Link>
+//               <Link href="/events" className="text-white hover:text-gray-600 px-3 py-2 rounded-md text-sm font-medium font-body">Events</Link>
+//               <Link href="/ourteam" className="text-white hover:text-gray-600 px-3 py-2 rounded-md text-sm font-medium font-body">Our team</Link>
+//             </div>
+//           </div>
+//           <div className="hidden md:block">
+//             <button className="bg-black hover:bg-gray-950 text-white px-4 py-2 rounded-md text-sm font-medium font-body">
+//               Contact Us
+//             </button>
+//           </div>
+//           <div className="md:hidden">
+//             <button
+//               onClick={toggleMenu}
+//               className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500"
+//               aria-expanded="false"
+//             >
+//               <span className="sr-only">Open main menu</span>
+//               {isOpen ? (
+//                 <X className="block h-6 w-6" aria-hidden="true" />
+//               ) : (
+//                 <Menu className="block h-6 w-6" aria-hidden="true" />
+//               )}
+//             </button>
+//           </div>
+//         </div>
+//       </div>
+
+//       {isOpen && (
+//         <div className="md:hidden">
+//           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+//             <Link href="/" className="text-white hover:text-gray-600 block px-3 py-2 rounded-md text-base font-medium text-center">Home</Link>
+//             <Link href="/events" className="text-white hover:text-gray-600 block px-3 py-2 rounded-md text-base font-medium text-center">Events</Link>
+//             <Link href="/ourteam" className="text-white hover:text-gray-600 block px-3 py-2 rounded-md text-base font-medium text-center">Our team</Link>
+//           </div>
+//           <div className="pt-4 pb-3 border-t border-[#5FD6A9]">
+//             <button className="bg-black hover:bg-gray-950 text-white px-10 py-3 rounded-lg text-sm font-medium mx-auto block ">
+//               Contact Us
+//             </button>
+//           </div>
+//         </div>
+//       )}
+//     </nav>
+//   )
+// }
+'use client'
+
 import { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -12,57 +81,75 @@ export default function Navbar() {
   }
 
   return (
-    <nav className="bg-[#091711]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
-          <div className="flex items-center">
-            <div className="flex-shrink-0">
-              <Image src="/Index_Logo_White.png" alt="Logo" width={100} height={10} />
-            </div>
-          </div>
-          <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-4">
-              <Link href="/" className="text-white hover:text-gray-600 px-3 py-2 rounded-md text-sm font-medium font-body">Home</Link>
-              <Link href="/events" className="text-white hover:text-gray-600 px-3 py-2 rounded-md text-sm font-medium font-body">Events</Link>
-              <Link href="/ourteam" className="text-white hover:text-gray-600 px-3 py-2 rounded-md text-sm font-medium font-body">Our team</Link>
-            </div>
-          </div>
-          <div className="hidden md:block">
-            <button className="bg-black hover:bg-gray-950 text-white px-4 py-2 rounded-md text-sm font-medium font-body">
-              Contact Us
-            </button>
-          </div>
-          <div className="md:hidden">
-            <button
-              onClick={toggleMenu}
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500"
-              aria-expanded="false"
-            >
-              <span className="sr-only">Open main menu</span>
-              {isOpen ? (
-                <X className="block h-6 w-6" aria-hidden="true" />
-              ) : (
-                <Menu className="block h-6 w-6" aria-hidden="true" />
-              )}
-            </button>
-          </div>
-        </div>
-      </div>
+    <nav className="absolute left-0 right-0 top-4 z-50 mx-auto max-w-4xl px-2 py-0">
+      <div className="rounded-full bg-[#226A4E44] px-4 py-2.5 shadow-xl">
+        <div className="flex items-center justify-between">
+          {/* Logo */}
+          <Link href="/" className="flex items-center pt-0">
+            <Image src="/Index_Logo_White.png" alt="Logo" width={80} height={24} />
+          </Link>
 
-      {isOpen && (
-        <div className="md:hidden">
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            <Link href="/" className="text-white hover:text-gray-600 block px-3 py-2 rounded-md text-base font-medium text-center">Home</Link>
-            <Link href="/events" className="text-white hover:text-gray-600 block px-3 py-2 rounded-md text-base font-medium text-center">Events</Link>
-            <Link href="/ourteam" className="text-white hover:text-gray-600 block px-3 py-2 rounded-md text-base font-medium text-center">Our team</Link>
+          {/* Desktop Navigation */}
+          <div className="hidden items-center gap-6 md:flex">
+            <Link href="/" className="text-sm text-white/90 transition hover:text-white">
+              Home
+            </Link>
+            <Link href="/events" className="text-sm text-white/90 transition hover:text-white">
+              Events
+            </Link>
+            <Link href="/ourteam" className="text-sm text-white/90 transition hover:text-white">
+              Our team
+            </Link>
           </div>
-          <div className="pt-4 pb-3 border-t border-[#5FD6A9]">
-            <button className="bg-black hover:bg-gray-950 text-white px-10 py-3 rounded-lg text-sm font-medium mx-auto block ">
+
+          {/* Login Button */}
+          <div className="hidden md:block">
+            <Link
+              href="/login"
+              className="rounded-full bg-white px-6 py-2 text-sm font-medium text-black hover:bg-white/90 transition"
+            >
               Contact Us
-            </button>
+            </Link>
           </div>
+
+          {/* Mobile Menu Button */}
+          <button
+            onClick={toggleMenu}
+            className="rounded-full bg-white p-2 text-black hover:bg-white/90 transition md:hidden"
+            aria-label="Toggle menu"
+          >
+            {isOpen ? (
+              <X className="h-6 w-6" aria-hidden="true" />
+            ) : (
+              <Menu className="h-6 w-6" aria-hidden="true" />
+            )}
+          </button>
         </div>
-      )}
+
+        {/* Mobile Navigation */}
+        {isOpen && (
+          <div className="mt-4 space-y-2 md:hidden">
+            <Link href="/" className="block rounded-md px-3 py-2 text-base font-medium text-white hover:bg-zinc-800">
+              Home
+            </Link>
+            <Link href="/about" className="block rounded-md px-3 py-2 text-base font-medium text-white hover:bg-zinc-800">
+              About
+            </Link>
+            <Link href="/support" className="block rounded-md px-3 py-2 text-base font-medium text-white hover:bg-zinc-800">
+              Support
+            </Link>
+            <Link href="/download" className="block rounded-md px-3 py-2 text-base font-medium text-white hover:bg-zinc-800">
+              Download
+            </Link>
+            <Link
+              href="/login"
+              className="block rounded-md bg-white px-3 py-2 text-base font-medium text-black hover:bg-white/90 transition"
+            >
+              Login
+            </Link>
+          </div>
+        )}
+      </div>
     </nav>
   )
 }

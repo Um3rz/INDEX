@@ -14,8 +14,8 @@ export default function Brands() {
     <section className="bg-[#091711] py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-primary mb-4 font-Heading">Trusted by Industry Leaders</h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto font-body">
+          <h2 className="text-3xl font-bold text-primary mb-4 ">Trusted by Industry Leaders</h2>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             We have had the privilege of working with some of the most innovative companies across various industries.
           </p>
         </div>

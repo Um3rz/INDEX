@@ -3,7 +3,7 @@ import Image from 'next/image'
 export default function Ec() {
   return (
     <section className="container mx-auto px-4 py-8 ">
-     <h2 className="text-3xl font-bold text-center mb-8">Executive Council</h2>
+    <h2 className="text-3xl font-bold text-center mb-8 pt-20">Executive Council</h2>
       <div className="grid grid-cols-2 md:grid-cols-2 gap-4">
         {/* First row with one centered image */}
         <div className="md:col-span-2 flex justify-center">
