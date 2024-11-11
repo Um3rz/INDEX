@@ -22,13 +22,13 @@ export default function Navbar() {
           </div>
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-4">
-              <Link href="/" className="text-white hover:text-gray-600 px-3 py-2 rounded-md text-sm font-medium">Home</Link>
-              <Link href="/events" className="text-white hover:text-gray-600 px-3 py-2 rounded-md text-sm font-medium">Events</Link>
-              <Link href="/ourteam" className="text-white hover:text-gray-600 px-3 py-2 rounded-md text-sm font-medium">Our team</Link>
+              <Link href="/" className="text-white hover:text-gray-600 px-3 py-2 rounded-md text-sm font-medium font-body">Home</Link>
+              <Link href="/events" className="text-white hover:text-gray-600 px-3 py-2 rounded-md text-sm font-medium font-body">Events</Link>
+              <Link href="/ourteam" className="text-white hover:text-gray-600 px-3 py-2 rounded-md text-sm font-medium font-body">Our team</Link>
             </div>
           </div>
           <div className="hidden md:block">
-            <button className="bg-black hover:bg-gray-950 text-white px-4 py-2 rounded-md text-sm font-medium">
+            <button className="bg-black hover:bg-gray-950 text-white px-4 py-2 rounded-md text-sm font-medium font-body">
               Contact Us
             </button>
           </div>

@@ -9,7 +9,7 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 export default function Footer() {
   return (
     <footer className="bg-[#226A4E44] py-8">
-      <div className="container mx-auto px-4">
+      <div className=" mx-auto px-4">
         <div className="flex flex-col items-center">
           {/* Logo */}
           <div className="mb-4">
