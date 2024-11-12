@@ -17,14 +17,14 @@ export default function EventPage()
 }
 
 
-export  function ImageGridSection() {
+function ImageGridSection() {
 return (
     <section className="container mx-auto px-4 py-16">
     <h2 className="text-center text-3xl font-bold mb-12 pt-20">Our Events</h2>
     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         <div className="aspect-square relative overflow-hidden rounded-lg shadow-lg">
         <a href="https://www.instagram.com/inovalums/">
-          <Image
+        <Image
             src="/inova (2).png"
             alt="Image 1"
             layout="fill"

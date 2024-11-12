@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export default function Component() {
   return (
-    <section className="bg-[#091711] py-16 px-4 sm:px-6 lg:px-8">
+    <section className="bg-[#226a4e44] dark:bg-[#226a4e44] py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <h1 className="text-2xl md:text-5xl xl:text-6xl font-extrabold text-center text-white mb-12 ">Our Events</h1>
         <div className="grid md:grid-cols-2 gap-8">
