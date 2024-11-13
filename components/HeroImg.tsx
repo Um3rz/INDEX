@@ -93,7 +93,7 @@ export default function HeroImg() {
   }, [])
 
   return (
-    <div className="relative min-h-screen overflow-hidden bg-[#091711]">
+    <div className="relative min-h-screen overflow-hidden bg-[#000000]">
       <canvas
         ref={canvasRef}
         className="absolute inset-0"
@@ -102,13 +102,13 @@ export default function HeroImg() {
       <div className="relative z-10 flex min-h-screen items-center justify-center top-10 bottom-10 ">
         <div className="flex h-[80vmin] w-[80vmin] items-center justify-center rounded-full bg-[#004d40]/90 shadow-2xl backdrop-blur-sm">
           <div className="max-w-[80%] text-center">
-            <h1 className="mb-4 text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
+            <h1 className="mb-4 text-2xl font-bold tracking-tight text-white md:text-4xl lg:text-6xl">
               We are the{' '}
               <span className="font-serif italic">design</span>
               <br />
               society at Lums
             </h1>
-            <p className="text-sm mb-8 tracking-widest text-white/90 sm:text-sm">
+            <p className="text-xs mb-8 tracking-widest text-white/90 sm:text-sm">
               INNOVATE . DESIGN . EXPERIENCE
             </p>
           </div>
